@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#part2 h6{
+    font-size: 14px;
+    font-weight: 550;
+
+}
+#part2 h6 span{
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+#nav2{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap : 65px;
+}
+
+#nav2 h4{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+#content{
+    height: calc(100% - 120px);
+    width: 100%;
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+    
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.elem h3{
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.elem h4{
+    font-weight: 500;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+#image-content{
+    display: flex;
+    height: 60%;
+    overflow-x: auto;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img1{
+    object-position: 0 8%;
+}
+
+#img2{
+    object-position: 0 45%;
+}
+
+#img3{
+    object-position: 0 40%;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
